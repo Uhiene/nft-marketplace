@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.hello {
+    background-image: url(/src/assets/nft1.jpeg);
+    background-size:initial;
+    background-repeat: no-repeat;
+}
