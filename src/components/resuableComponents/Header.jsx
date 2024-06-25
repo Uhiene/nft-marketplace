@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({ children }) => {
     return (
-        <h1 className="text-white text-3xl lg:text-5xl font-semibold mb-10">
+        <h1 className="text-white text-2xl lg:text-4xl font-semibold mb-5 text-center lg:text-start lg:mb-10">
             {children}
         </h1>
     );

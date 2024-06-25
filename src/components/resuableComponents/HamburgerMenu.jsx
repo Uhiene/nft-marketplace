@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom'
+import Button from './Button';
 
 const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,7 @@ const HamburgerMenu = () => {
                 <Link to="/discovery">Discovery</Link>
                 <Link to="/">Mint</Link>
                 <Link to="/about" >List</Link>
+                <Button bg="bg-blue-800" textColor="text-white" btnText="Connect Wallect" />
             </div>
         </div>
     );
