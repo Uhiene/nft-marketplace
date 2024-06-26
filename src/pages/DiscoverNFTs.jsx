@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout/Layout'
 import Header from '../components/resuableComponents/Header'
-import NFTCard from '../components/cards/NFTCard'
 import { nfts } from '../utils';
+import NFTCard from '../components/resuableComponents/NFTCard';
 
 const DiscoverNFTs = () => {
     return (

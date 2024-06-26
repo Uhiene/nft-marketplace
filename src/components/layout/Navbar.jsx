@@ -9,7 +9,14 @@ function Navbar() {
   return (
     <nav className="fixed w-full bg-[#100E09] border-b border-blue-700 p-4 px-6 lg:px-12 z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-white text-lg font-bold">NFT Marketplace</Link>
+        <Link to="/">
+          <h1 className="text-lg font-bold text-white">
+            <span className="bg-gradient-to-l from-[#1e51ed] via-[#ed1eaf] to-[#fe6201] bg-clip-text text-transparent">
+              NFT
+            </span>
+            <span className="ml-1 logo">Marketplace</span>
+          </h1>
+        </Link>
         <div>
           <div className="hidden lg:flex items-center space-x-4 text-white font-medium">
             <Link

@@ -1,6 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
-import NFTCard from '../cards/NFTCard';
+import NFTCard from '../resuableComponents/NFTCard';
 import { nfts } from '../../utils';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,38 +14,33 @@ const TrendingNFTs = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000, // Delay between each auto-scroll (in ms)
-       // Enable center mode
-      // Adjust as needed for spacing
         pauseOnHover: true,
         responsive: [
             {
-                breakpoint: 1050, // tablet breakpoint
+                breakpoint: 1050,
                 settings: {
-                    slidesToShow: 4, // Number of slides to show on tablets
-                     centerPadding: "0"
+                    slidesToShow: 4,
                 }
             },
             {
-                breakpoint: 768, // phone breakpoint
+                breakpoint: 768,
                 settings: {
-                    slidesToShow: 3, // Number of slides to show on phones
-                    centerPadding: "0"
+                    slidesToShow: 3,
                 }
             },
             {
-                breakpoint: 450, // phone breakpoint
+                breakpoint: 450,
                 settings: {
-                    slidesToShow: 1, // Number of slides to show on phones
+                    slidesToShow: 1, 
                     centerMode: true,
-                    // centerPadding: "10px",
                 }
             }
         ]
     };
 
     return (
-        <div className='mt-20'>
-            <h1 className='text-white text-3xl font-semibold mb-5'>Trending NFTs</h1>
+        <div className='mt-10 lg:mt-20'>
+            <h1 className='text-white text-xl lg:text-3xl font-semibold mb-5'>Trending NFTs</h1>
             <div className="carousel-container">
                 <Slider {...settings}>
                     {nfts.map((nft) => (
