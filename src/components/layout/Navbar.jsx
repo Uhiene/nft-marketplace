@@ -21,19 +21,19 @@ function Navbar() {
           <div className="hidden lg:flex items-center space-x-4 text-white font-medium">
             <Link
               to="/discovery"
-              className={`relative py-2 ${location.pathname === '/discovery' ? 'border-b-2 border-blue-500' : 'hover:border-b-2 hover:border-gray-300'}`}
+              className={`relative ${location.pathname === '/discovery' ? 'text-blue-500' : 'hover:text-blue-500 transition ease-in-out duration-1000'}`}
             >
               Discovery
             </Link>
             <Link
               to="/mint"
-              className={`relative py-2 ${location.pathname === '/mint' ? 'border-b-2 border-blue-500' : 'hover:border-b-2 hover:border-gray-300'}`}
+              className={`relative ${location.pathname === '/mint' ? 'text-blue-500' : 'hover:text-blue-500 transition ease-out duration-1000'}`}
             >
               Mint
             </Link>
             <Link
               to="/list"
-              className={`relative py-2 ${location.pathname === '/list' ? 'border-b-2 border-blue-500' : 'hover:border-b-2 hover:border-gray-300'}`}
+              className={`relative ${location.pathname === '/list' ? 'text-blue-500' : 'hover:text-blue-500 transition ease-out duration-1000'}`}
             >
               List
             </Link>
